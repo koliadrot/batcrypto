@@ -10,6 +10,7 @@ What is Batman?
 ----------------
 
 Batman is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
+<<<<<<< HEAD
  - 1 minute block targets
  - subsidy halves in 840k blocks (~4 years)
  - ~10000000000 total coins
@@ -17,6 +18,15 @@ Batman is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
 The rest is the same as Bitcoin.
  - 500 coins per block
  - 1440 blocks to retarget difficulty
+=======
+ - 2.5 minute block targets
+ - subsidy halves in 840k blocks (~4 years)
+ - ~84 million total coins
+
+The rest is the same as Bitcoin.
+ - 50 coins per block
+ - 2016 blocks to retarget difficulty
+>>>>>>> f584afa8556c5e2d9499d65659c62fcb756ce2f3
 
 For more information, as well as an immediately useable, binary version of
 the Batman client sofware, see http://www.batman.org.
