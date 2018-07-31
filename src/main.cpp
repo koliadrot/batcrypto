@@ -1089,8 +1089,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 500 * COIN;
 
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 500000000000); // Batman: 840k blocks in ~4 years
+    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 5 years
+    nSubsidy >>= (nHeight / 2628000); // Batman: 2628k blocks in ~5 years
 
     return nSubsidy + nFees;
 }
@@ -2779,7 +2779,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "Batman will come with you today ";
+        const char* pszTimestamp = "Today, Batman will come with you ";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
